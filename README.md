@@ -153,7 +153,7 @@ react-icons
 ---
 
 #  Project Structure
-
+```
 
 src
  ├── components
