@@ -1,0 +1,251 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+
+form{
+  width:500px;
+  display:flex;
+  justify-content:center;
+}
+.form-contain{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#f4f6f9;
+  padding:15px;
+}
+.form-main {
+  width:95%;
+  max-width:900px;   
+  margin:auto;
+  background:white;
+  border:2px solid black;
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.form-title h1{
+  text-align:center;
+  font-size:28px;
+}
+.form-details{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.form-input,
+.form-email,
+.form-phonenumber,
+.form-age,
+.form-gender,
+.form-dob,
+.city,
+.state,
+.pincode,
+.roll-no,
+.clgname,
+.course,
+.department,
+.year,
+.cgpa,
+.linkedin,
+.github,
+.resume,
+.user-name,
+.password,
+.confirmpassword{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+label{
+  font-weight:bold;
+}
+
+input,
+select{
+  width:100%;               
+  padding:10px;
+  border:1px solid black;
+  border-radius:6px;
+  font-size:14px;
+  outline:none;
+}
+
+input:focus,
+select:focus{
+  border-color:#007bff;
+}
+
+.form-address{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+
+.academic-section{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width:100%;
+}
+
+.academic-title{
+  text-align:center;
+  font-size:22px;
+}
+
+.skills-section{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.skills h2{
+  font-size:18px;
+}
+
+.skill-row{
+  display:flex;
+  gap:10px;
+}
+
+.skill-row input{
+  flex:1;
+}
+
+.additional-details{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.additional-title h3,
+.account-title h3{
+  text-align:center;
+  font-size:22px;
+}
+
+.professional-profiles,
+.account-details,
+.details{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-input span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+}
+
+.error{
+  color:red;
+  font-size:13px;
+  margin-top:2px;
+}
+
+input:invalid {
+  border-color:red;
+}
+
+button{
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-primary{
+  background:#007bff;
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:#0056b3;
+}
+
+.btn-secondary{
+  background:#007bff;
+  color:#fff;
+}
+
+.back-btn{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-secondary:hover{
+  background:#007bff;
+}
+
+.btn-danger{
+  background:#e63946;
+  color:#fff;
+}
+
+.btn-danger:hover{
+  background:#c82333;
+}
+
+.btn-add{
+  background:#2a9d8f;
+  color:#fff;
+  margin-top:5px;
+}
+
+.form-navigation{
+  display:flex;
+  justify-content:flex-end;   
+  width:100%;
+  margin-top:20px;
+}
+
+.form-navigations{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  margin-top:20px;
+  gap:10px;
+}
+
+@media(max-width:500px){
+  .form-navigation,
+  .form-navigations{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  button{
+    width:100%;
+  }
+}
