@@ -161,8 +161,8 @@ src
  │     ├── StudentGrid.js
  │
  ├── validationSchema.js
- ├── App.js
- ├── index.js
+ ├── App.jsx
+ ├── index.jsx
 
 
 
